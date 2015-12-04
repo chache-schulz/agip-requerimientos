@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="spsrequerimientosModelStoreContainer" CdmEntityContainer="spsrequerimientosEntities">
+    <EntitySetMapping Name="analista">
+      <EntityTypeMapping TypeName="spsrequerimientosModel.analista">
+        <MappingFragment StoreEntitySet="analista">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="area">
+      <EntityTypeMapping TypeName="spsrequerimientosModel.area">
+        <MappingFragment StoreEntitySet="area">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="areaTarea">
+      <EntityTypeMapping TypeName="spsrequerimientosModel.areaTarea">
+        <MappingFragment StoreEntitySet="areaTarea">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clase">
+      <EntityTypeMapping TypeName="spsrequerimientosModel.clase">
+        <MappingFragment StoreEntitySet="clase">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="equipo">
+      <EntityTypeMapping TypeName="spsrequerimientosModel.equipo">
+        <MappingFragment StoreEntitySet="equipo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="estadoSps">
+      <EntityTypeMapping TypeName="spsrequerimientosModel.estadoSps">
+        <MappingFragment StoreEntitySet="estadoSps">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="estadoSpsAdicional">
+      <EntityTypeMapping TypeName="spsrequerimientosModel.estadoSpsAdicional">
+        <MappingFragment StoreEntitySet="estadoSpsAdicional">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="estadoTarea">
+      <EntityTypeMapping TypeName="spsrequerimientosModel.estadoTarea">
+        <MappingFragment StoreEntitySet="estadoTarea">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="impuesto">
+      <EntityTypeMapping TypeName="spsrequerimientosModel.impuesto">
+        <MappingFragment StoreEntitySet="impuesto">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="informacionAdicional">
+      <EntityTypeMapping TypeName="spsrequerimientosModel.informacionAdicional">
+        <MappingFragment StoreEntitySet="informacionAdicional">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="fechaCierre" ColumnName="fechaCierre" />
+          <ScalarProperty Name="estadoSpsAdicional_Id" ColumnName="estadoSpsAdicional_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="origen">
+      <EntityTypeMapping TypeName="spsrequerimientosModel.origen">
+        <MappingFragment StoreEntitySet="origen">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="prioridad">
+      <EntityTypeMapping TypeName="spsrequerimientosModel.prioridad">
+        <MappingFragment StoreEntitySet="prioridad">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="severidad">
+      <EntityTypeMapping TypeName="spsrequerimientosModel.severidad">
+        <MappingFragment StoreEntitySet="severidad">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sps">
+      <EntityTypeMapping TypeName="spsrequerimientosModel.sps">
+        <MappingFragment StoreEntitySet="sps">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="vuser" ColumnName="vuser" />
+          <ScalarProperty Name="referencia" ColumnName="referencia" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="caratula" ColumnName="caratula" />
+          <ScalarProperty Name="fechaOrigen" ColumnName="fechaOrigen" />
+          <ScalarProperty Name="fechaComunicada" ColumnName="fechaComunicada" />
+          <ScalarProperty Name="impuesto_Id" ColumnName="impuesto_Id" />
+          <ScalarProperty Name="estadoSps_Id" ColumnName="estadoSps_Id" />
+          <ScalarProperty Name="informacionAdicional_Id" ColumnName="informacionAdicional_Id" />
+          <ScalarProperty Name="clase_Id" ColumnName="clase_Id" />
+          <ScalarProperty Name="area_Id" ColumnName="area_Id" />
+          <ScalarProperty Name="analista_Id" ColumnName="analista_Id" />
+          <ScalarProperty Name="origen_id" ColumnName="origen_id" />
+          <ScalarProperty Name="severidad_id" ColumnName="severidad_id" />
+          <ScalarProperty Name="prioridad_id" ColumnName="prioridad_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="spsrequerimientosModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tarea">
+      <EntityTypeMapping TypeName="spsrequerimientosModel.tarea">
+        <MappingFragment StoreEntitySet="tarea">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="vuser" ColumnName="vuser" />
+          <ScalarProperty Name="referencia" ColumnName="referencia" />
+          <ScalarProperty Name="area_Id" ColumnName="area_Id" />
+          <ScalarProperty Name="analista_Id" ColumnName="analista_Id" />
+          <ScalarProperty Name="usuario_Id" ColumnName="usuario_Id" />
+          <ScalarProperty Name="equipo_Id" ColumnName="equipo_Id" />
+          <ScalarProperty Name="estadoTarea_Id" ColumnName="estadoTarea_Id" />
+          <ScalarProperty Name="sps_Id" ColumnName="sps_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="spsrequerimientosModel.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="areaTareatarea" TypeName="spsrequerimientosModel.areaTareatarea" StoreEntitySet="areaTareatarea">
+      <EndProperty Name="areaTarea">
+        <ScalarProperty Name="Id" ColumnName="areaTarea_Id" />
+      </EndProperty>
+      <EndProperty Name="tarea">
+        <ScalarProperty Name="Id" ColumnName="tareas_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
