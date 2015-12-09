@@ -102,7 +102,11 @@ namespace RequerimientosSPS.Controllers
         db.SaveChanges();
             return "ok";
         }
-        
+
+        public string prueba()
+        {
+            return "Prueba prueba oejfiokjsd";
+        }        
 
         // GET: Load
         public ActionResult Index()
